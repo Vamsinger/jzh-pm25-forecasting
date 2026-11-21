@@ -1,0 +1,152 @@
+{
+  "dataset": "JZH_Air_2014_2018",
+  "created_at": "2026-11-10T22:47:04.659100+08:00",
+  "source_archive": "AirMeteorology.7z",
+  "source_archive_sha256": "cd055dccd67794add6fc9a1a6c7d0aad1ae4f52eb3cef4a57b2ed54d97882f31",
+  "geographic_scope": "江苏省、浙江省、上海市",
+  "city_count": 25,
+  "district_count": 207,
+  "metadata_station_count": 307,
+  "observed_airquality_station_count": 215,
+  "time_filter": {
+    "start": "2014-01-01 00:00:00",
+    "end_inclusive": "2018-12-31 23:59:59",
+    "weather_forecast_rule": "按发布时间 time 筛选；预报时段 time_period_start 可超出该范围",
+    "timezone": "原始数据未注明时区，未进行时区转换"
+  },
+  "processing": {
+    "timestamp_format": "YYYY-MM-DD HH:MM:SS",
+    "airquality": "增加 city_id；station_id 可通过 metadata/stations.csv 关联经纬度",
+    "meteorology_and_weather_forecast": "保留 region_id，增加 city_id 和 region_level；region_level 为 city 或 district，未重采样",
+    "missing_values": "保留为空字符串，未插补、未删除缺失记录"
+  },
+  "data": {
+    "airquality": {
+      "source_files": 25,
+      "input_rows": 6412074,
+      "output_rows": 5458280,
+      "excluded_rows_outside_2014_2018": 953794,
+      "min_time": "2015-01-01 00:00:00",
+      "max_time": "2018-12-31 23:00:00",
+      "yearly_rows": {
+        "2014": 0,
+        "2015": 1564225,
+        "2016": 1378299,
+        "2017": 1357790,
+        "2018": 1157966
+      },
+      "missing_values": {
+        "CO": 278850,
+        "NO2": 315065,
+        "O3": 267040,
+        "PM10": 417773,
+        "PM25": 134160,
+        "SO2": 274464
+      },
+      "output_file": "data/airquality.csv.gz",
+      "output_columns": [
+        "city_id",
+        "station_id",
+        "time",
+        "PM25",
+        "PM10",
+        "NO2",
+        "CO",
+        "O3",
+        "SO2"
+      ],
+      "compressed_bytes": 58918825
+    },
+    "meteorology": {
+      "source_files": 25,
+      "input_rows": 6164816,
+      "output_rows": 4824715,
+      "excluded_rows_outside_2014_2018": 1340101,
+      "min_time": "2015-01-01 00:00:00",
+      "max_time": "2018-12-31 23:00:00",
+      "yearly_rows": {
+        "2014": 0,
+        "2015": 1242056,
+        "2016": 1168331,
+        "2017": 1221477,
+        "2018": 1192851
+      },
+      "missing_values": {
+        "Humidity": 831,
+        "Pressure": 275692,
+        "RainFall": 2431208,
+        "Temperature": 1304,
+        "Weather": 41864,
+        "WindDirection": 6807,
+        "WindSpeed": 5984
+      },
+      "output_file": "data/meteorology.csv.gz",
+      "output_columns": [
+        "city_id",
+        "region_id",
+        "region_level",
+        "time",
+        "RainFall",
+        "Temperature",
+        "Pressure",
+        "Humidity",
+        "WindSpeed",
+        "WindDirection",
+        "Weather"
+      ],
+      "compressed_bytes": 39083770
+    },
+    "weatherforecast": {
+      "source_files": 25,
+      "input_rows": 10317258,
+      "output_rows": 8022862,
+      "excluded_rows_outside_2014_2018": 2294396,
+      "min_time": "2015-01-01 08:00:00",
+      "max_time": "2018-12-31 20:00:00",
+      "yearly_rows": {
+        "2014": 0,
+        "2015": 1847879,
+        "2016": 1754640,
+        "2017": 2370900,
+        "2018": 2049443
+      },
+      "missing_values": {
+        "Bottom_Temperature": 760,
+        "RainFall": 4018214,
+        "Up_Temperature": 760,
+        "Weather": 244,
+        "WindDirection": 12440,
+        "WindStrength": 699774
+      },
+      "output_file": "data/weather_forecast.csv.gz",
+      "output_columns": [
+        "city_id",
+        "region_id",
+        "region_level",
+        "time",
+        "time_period_start",
+        "Weather",
+        "Up_Temperature",
+        "Bottom_Temperature",
+        "WindStrength",
+        "WindDirection",
+        "RainFall"
+      ],
+      "compressed_bytes": 49486090
+    }
+  },
+  "weather_forecast_target_time_range": {
+    "min_time_period_start": "2015-01-01 08:00:00",
+    "max_time_period_start": "2019-01-03 05:00:00"
+  },
+  "airquality_stations_missing_from_metadata": [
+    "078003",
+    "261019",
+    "267009"
+  ],
+  "station_city_mismatch_examples": [],
+  "notes": [
+    "原始文件未提供的数据年份不会人工补造；各城市实际覆盖范围见 summary_by_city.csv。",
+    "上海为直辖市，在 cities.csv 中 province_id 按原始数据保留为空。"
+  ]
+}

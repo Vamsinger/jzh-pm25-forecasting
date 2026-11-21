@@ -1,0 +1,7 @@
+* text=auto
+JZH_Air_2014_2018/** -text
+*.pt binary
+*.pdf binary
+*.pptx binary
+*.png binary
+

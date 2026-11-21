@@ -1,0 +1,50 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "data/airquality.csv.gz",
+      "bytes": 58918825,
+      "sha256": "ffcec6eadbc14f72e9e5390fa1b60cefd67b67179c1cd1ab3f89e691c48d0697"
+    },
+    {
+      "path": "data/meteorology.csv.gz",
+      "bytes": 39083770,
+      "sha256": "271995aa04206275afb865662c9ad72456c19bc840b45f44e645083703ddf574"
+    },
+    {
+      "path": "data/weather_forecast.csv.gz",
+      "bytes": 49486090,
+      "sha256": "58117c7a250d85f3297aaa4d148ba800b75677100c7b41af33e9408509b2d624"
+    },
+    {
+      "path": "dataset_summary.json",
+      "bytes": 4402,
+      "sha256": "a83f5bcae83ddaf2d160446ee289c22213b2b8745ff02f6f1f4b8ad7f1380800"
+    },
+    {
+      "path": "metadata/cities.csv",
+      "bytes": 598,
+      "sha256": "bd589c02e9f27e3d851b511fc71d54c897dbc35af3e030a7131f58f6eae68197"
+    },
+    {
+      "path": "metadata/districts.csv",
+      "bytes": 5541,
+      "sha256": "bbed275ee75626bfd2da47979970b2f510c8f67032a380430209a82d0cba4bb4"
+    },
+    {
+      "path": "metadata/provinces.csv",
+      "bytes": 74,
+      "sha256": "2e31d3731b2a6b3b180ccb895a25522d216186b7db86a33db58cbf2a6ea5f36c"
+    },
+    {
+      "path": "metadata/stations.csv",
+      "bytes": 23623,
+      "sha256": "07ccfa96c592430b0057493a6ec92a69fff33475a6d3ecf8e74873ea7cd51eee"
+    },
+    {
+      "path": "summary_by_city.csv",
+      "bytes": 8162,
+      "sha256": "af985945cca5837167409499bb2f9d70c9430bee796ca3d4ff3f331aa984483c"
+    }
+  ]
+}
