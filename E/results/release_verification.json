@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "manifest_files": 9,
+  "prediction_shape": [
+    8737,
+    212,
+    24
+  ],
+  "prediction_arrays": 18,
+  "raw_truth_check": {
+    "station_id": "002001",
+    "forecast_origin": "2017-12-31 23:00:00",
+    "target_period": [
+      "2018-01-01 00:00:00",
+      "2018-01-01 23:00:00"
+    ],
+    "matched_hours": 24
+  },
+  "independent_metric_rows": 24,
+  "m1_h1_mae": 5.370352017246226,
+  "m1_h24_mae": 18.791933757476173,
+  "rebuilt_plots": [
+    "horizons.png",
+    "cases.png",
+    "cities.png"
+  ]
+}

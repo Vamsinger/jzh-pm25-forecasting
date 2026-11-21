@@ -1,0 +1,54 @@
+{
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "history": 48,
+  "horizons": 24,
+  "epochs": 4,
+  "batch": 16,
+  "train_origin_stride": 12,
+  "validation_origin_stride": 23,
+  "learning_rates": [
+    0.002,
+    0.005
+  ],
+  "neighbors": [
+    3,
+    6
+  ],
+  "holdout_seed": 17,
+  "experiments": {
+    "M1": [
+      "TCN",
+      false,
+      false,
+      false
+    ],
+    "M2": [
+      "STGCN",
+      false,
+      false,
+      false
+    ],
+    "A1": [
+      "STGCN",
+      true,
+      false,
+      false
+    ],
+    "A2": [
+      "STGCN",
+      true,
+      true,
+      false
+    ],
+    "A3": [
+      "STGCN",
+      true,
+      true,
+      true
+    ]
+  }
+}

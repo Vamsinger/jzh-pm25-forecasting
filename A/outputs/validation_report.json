@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "tensor_shape": [
+    35064,
+    212,
+    6
+  ],
+  "station_count": 212,
+  "split_origin_bounds": {
+    "train": [
+      47,
+      17519
+    ],
+    "validation": [
+      17543,
+      26279
+    ],
+    "test": [
+      26303,
+      35039
+    ]
+  },
+  "source_checked_station": "005002",
+  "source_checked_period": [
+    "2017-01-01 01:00:00",
+    "2017-01-04 00:00:00"
+  ],
+  "source_rows_checked": 72,
+  "origin": "2017-01-03 00:00:00"
+}

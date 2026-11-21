@@ -1,0 +1,8 @@
+﻿metric,value
+model_station_count,212.0
+usable_coordinate_count,212.0
+excluded_coordinate_count,0.0
+k,6.0
+directed_nonzero_off_diagonal,1642.0
+row_sum_min,0.9999999403953552
+row_sum_max,1.0000001192092896

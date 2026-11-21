@@ -5,3 +5,5 @@ __pycache__/
 .omx/
 ~$*
 
+.build/
+.presentation-validation/

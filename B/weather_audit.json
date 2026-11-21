@@ -1,0 +1,77 @@
+{
+  "time_axis": {
+    "start": "2015-01-01 00:00:00",
+    "end": "2018-12-31 23:00:00",
+    "hours": 35064
+  },
+  "station_count": 212,
+  "meteorology": {
+    "features": [
+      "Temperature",
+      "Humidity",
+      "WindSpeed"
+    ],
+    "duplicate_rows_before_hourly_mean": 0,
+    "stations_with_district_data": 104,
+    "stations_city_only": 108,
+    "availability": {
+      "Temperature": 0.8229871577148417,
+      "Humidity": 0.8230359902539399,
+      "WindSpeed": 0.8222654316204546
+    },
+    "non_hourly_source_rows_ceiled_forward": 0,
+    "alignment_rule": "整点记录保留原时刻；非整点记录向上对齐到下一个整点，保证该小时开始前记录已经产生"
+  },
+  "forecast": {
+    "features": [
+      "Up_Temperature",
+      "Bottom_Temperature",
+      "WindStrength",
+      "forecast_age_hours"
+    ],
+    "stations_with_district_forecast": 104,
+    "match_rate_by_horizon": {
+      "1": 0.30894975333514135,
+      "2": 0.30894975333514135,
+      "3": 0.30894975333514135,
+      "4": 0.30815941954119475,
+      "5": 0.30815941954119475,
+      "6": 0.30815941954119475,
+      "7": 0.3073832108618634,
+      "8": 0.3073832108618634,
+      "9": 0.307411730140896,
+      "10": 0.3066351178868613,
+      "11": 0.3066351178868613,
+      "12": 0.30666363716589395,
+      "13": 0.30565053013573024,
+      "14": 0.30565053013573024,
+      "15": 0.30567904941476287,
+      "16": 0.30442877498396465,
+      "17": 0.30442877498396465,
+      "18": 0.3044572942629973,
+      "19": 0.3031892625452542,
+      "20": 0.3031892625452542,
+      "21": 0.3032177818242868,
+      "22": 0.30192930232157694,
+      "23": 0.30192930232157694,
+      "24": 0.3019578216006096
+    },
+    "forecast_age_hours": {
+      "min": 0.0,
+      "median": 6.0,
+      "max": 59.0
+    },
+    "matching_rule": "目标小时与 time_period_start 精确相等；对同一目标小时选择不晚于起报时刻的最新发布记录；区县优先、城市回退"
+  },
+  "source_forecast_audit": {
+    "forecast_rows": 4048154,
+    "duplicate_keys": 0,
+    "publication_hours": [
+      8,
+      20
+    ],
+    "target_minute_counts": {
+      "0": 4048154
+    }
+  }
+}

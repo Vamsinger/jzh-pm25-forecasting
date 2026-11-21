@@ -1,0 +1,119 @@
+[
+  {
+    "member": "A",
+    "task": "污染物审计与样本构建",
+    "start": "2026-11-21 11:45",
+    "end": "2026-11-21 11:51",
+    "status": "已完成",
+    "evidence": "212 站，见 A/数据质量报告.md 和 A/outputs",
+    "updated": "2026-11-21 11:51"
+  },
+  {
+    "member": "B",
+    "task": "历史气象和天气预报对齐",
+    "start": "2026-11-21 11:45",
+    "end": "2026-11-21 11:55",
+    "status": "已完成",
+    "evidence": "B/weather_audit.json、trace_example.json、测试与原表核对",
+    "updated": "2026-11-21 11:55"
+  },
+  {
+    "member": "C",
+    "task": "两个基线与 TCN 实现",
+    "start": "2026-11-21 11:45",
+    "end": "2026-11-21 11:49",
+    "status": "已完成",
+    "evidence": "C/models.py 与模型接口测试",
+    "updated": "2026-11-21 11:49"
+  },
+  {
+    "member": "D",
+    "task": "构图与 STGCN 实现",
+    "start": "2026-11-21 11:45",
+    "end": "2026-11-21 11:49",
+    "status": "已完成",
+    "evidence": "D/models.py 与站点图",
+    "updated": "2026-11-21 11:49"
+  },
+  {
+    "member": "E",
+    "task": "统一预测接口、实验与进度登记",
+    "start": "2026-11-21 11:45",
+    "end": "2026-11-21 11:50",
+    "status": "已完成",
+    "evidence": "E/experiment.py、E/evaluate.py、E/progress.py",
+    "updated": "2026-11-21 11:50"
+  },
+  {
+    "member": "C",
+    "task": "验证选参与三种子训练",
+    "start": "2026-11-21 11:48",
+    "end": "2026-11-21 11:50",
+    "status": "已完成",
+    "evidence": "C/runs 与 E/results/frozen_M1.json",
+    "updated": "2026-11-21 11:50"
+  },
+  {
+    "member": "D",
+    "task": "验证选参、三种子训练与消融",
+    "start": "2026-11-21 11:48",
+    "end": "2026-11-21 11:55",
+    "status": "已完成",
+    "evidence": "M2、A1、A2、A3 已冻结配置和权重，见 D/runs 和 E/results/frozen_*.json",
+    "updated": "2026-11-21 11:55"
+  },
+  {
+    "member": "E",
+    "task": "报告与答辩材料",
+    "start": "2026-11-21 11:49",
+    "end": "",
+    "status": "进行中",
+    "evidence": "搭建版式，待接入最终测试结果",
+    "updated": "2026-11-21 11:49"
+  },
+  {
+    "member": "E",
+    "task": "统一测试与分城市评价",
+    "start": "2026-11-21 11:50",
+    "end": "2026-11-21 11:56",
+    "status": "已完成",
+    "evidence": "2,433 万个共同有效目标，表、分层结果与图在 E/results",
+    "updated": "2026-11-21 11:56"
+  },
+  {
+    "member": "A",
+    "task": "跨年样本与独立复核",
+    "start": "2026-11-21 11:51",
+    "end": "2026-11-21 11:56",
+    "status": "已完成",
+    "evidence": "E/复核说明.md：逐步独立复算，原表一致",
+    "updated": "2026-11-21 11:56"
+  },
+  {
+    "member": "B",
+    "task": "提交清单与科学口径复核",
+    "start": "2026-11-21 11:55",
+    "end": "",
+    "status": "进行中",
+    "evidence": "对照产物逐项核查",
+    "updated": "2026-11-21 11:55"
+  },
+  {
+    "member": "E",
+    "task": "上海站点端到端核验",
+    "start": "2026-11-21 11:55",
+    "end": "2026-11-21 11:55",
+    "status": "已完成",
+    "evidence": "002001 上海站于 2017-01-07 16:00 起报，按逐点公式独立复算持久性 24 步 MAE 为 41.625；E/results/pilot_shanghai.csv",
+    "updated": "2026-11-21 11:55"
+  },
+  {
+    "member": "E",
+    "task": "GitHub 发布与克隆复验",
+    "start": "2026-11-21 12:00",
+    "end": "",
+    "status": "进行中",
+    "evidence": "已核实目标账号和本地数据清单，等待报告与答辩文件最终验收",
+    "updated": "2026-11-21 12:00"
+  }
+]
