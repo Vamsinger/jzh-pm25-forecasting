@@ -300,7 +300,7 @@ async function main() {
       `天气预报 A2 相对 A1 降低 ${forecastIncrement}%`,
       `空间传播 A2 相对 A3 降低 ${spaceIncrement}%`,
       "上述差异均小于随机种子波动",
-      "消融差异均小于随机种子波动",
+      "不同城市的收益方向并不一致",
     ], { left: 875, top: 215, width: 330, height: 305 }, { fontSize: "17pt" });
     addText(slide, `高污染真值达到训练期 P90 时\n持久性 MAE ${extremeB1.toFixed(2)}\nA2 MAE ${extremeA2.toFixed(2)}\n\nP90 以下\n持久性 ${normalB1.toFixed(2)}，A2 ${normalA2.toFixed(2)}`, { left: 875, top: 510, width: 330, height: 155 }, { fontSize: "16pt", color: COLORS.rust });
   }
