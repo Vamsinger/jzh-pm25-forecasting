@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/Vamsinger/jzh-pm25-forecasting",
+  "tested_commit": "267807a61e24486dbb96e27467e44d11ba98c9b3",
+  "verified_at": "2026-11-21T12:07:09.2751975+08:00",
+  "dataset_files_matching_sha256": 10,
+  "recomputed_from": "public clone, bundled raw data and frozen checkpoints, empty feature and prediction caches",
+  "summary_rows_checked": 4550,
+  "numeric_rtol": 1E-07,
+  "numeric_atol": 1E-07,
+  "published_summary_sha256": "8A0EC3E404A5F04507D549EC6F6959A872CD640E58ED01B38075C61B4FA2A15A",
+  "recomputed_summary_sha256": "8A0EC3E404A5F04507D549EC6F6959A872CD640E58ED01B38075C61B4FA2A15A",
+  "status": "PASS"
+}
